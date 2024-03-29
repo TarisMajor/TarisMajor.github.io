@@ -1,7 +1,33 @@
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(fonts/Montserrat-Light.ttf);
+}
+
 h1{
     color : black;
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: beige;
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+footer{
+    background-color: beige;
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+
+
 }
 
 body{
     background-color: whitesmoke;
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+
+}
+p{
+    color: black;
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+
 }
