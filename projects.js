@@ -1,4 +1,4 @@
 function alertButton()
 {
-    alert("Hello World")
+    alert("Nothing on this page yet ;)")
 }

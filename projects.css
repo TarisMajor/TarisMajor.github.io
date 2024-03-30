@@ -37,3 +37,14 @@ p{
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+a:link{
+    color: white;
+}
+a:hover{
+    color:darkgrey;
+    font-size: 1.25em;
+}
+a:visited{
+    color: blue;
+}
