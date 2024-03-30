@@ -3,31 +3,37 @@
     src: url(fonts/Montserrat-Light.ttf);
 }
 
+span{
+    display: inline;
+}
+
 h1{
-    color : black;
+    color : white;
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
-    background-color: beige;
+    color: white;
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 footer{
-    background-color: beige;
+    color: white;
+    font: bold;
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
 body{
-    background-color: whitesmoke;
-    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
-
+    color: white;
+    font-family: Montserrat-Light, Lora-Regular, Merriweather-Light, Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(images/sand.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 p{
-    color: black;
+    color: white;
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
 
 }
