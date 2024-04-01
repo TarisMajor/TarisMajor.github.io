@@ -3,27 +3,52 @@
 
 <head>
 
+<!-- Create a name for the tab-->
 <title>Taris Major Resume Website</title>
+
+<!-- Set the image of the webpage in the tab -->
 <link rel="icon" type="image/jpg" href="images/favicon.png">
+
+<!-- Link the CSS file for styling -->
 <link rel="stylesheet" href="projects.css"/>
+
+<!-- Create a description for the website -->
 <meta name="Description" content="My first web project creating resume">
+
+<!-- If anyone were to search up the website, these keywords would be used -->
 <meta name="keywords" content="Resume, Computer Science, Project">
 <meta name="Author" content="Taris Major">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Getting icons from this website -->
+<script src="https://kit.fontawesome.com/a6dfca3195.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Create the header with name and 3 links -->
     <header>
         <center>
             <h1>Taris Major</h1>
-            <a href="">Home</a>
-            <a href="" onclick="alertButton()" >About</a>
-            <a href="">Contact</a>
+            <a href="" id="Home">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="" onclick="alertButton()" id="About">
+                <i class="fa-solid fa-address-card"></i>
+                About
+            </a>
+
+            <a href="" id="Contact">
+                <i class="fa-regular fa-address-book"></i>
+                Contact
+            </a>
         </center>
         <hr>
     </header>
     
     <main>
+        <!-- Created a link to my LinkedIn profile using a photo of me -->
         <span>
             <center>
                 <a href="https://www.linkedin.com/in/tarismajor/" target="_blank" >
@@ -32,42 +57,42 @@
             </center>
         </span>
 
-        <br>
+        <br><br>
         
+        <!-- Create a button that leads to my most updated resume -->
         <span>
             <center>
-                <button style="border: 5; border-radius: 10px;">
-                    <a href="images/Certified Resume 2024.pdf" target="_blank" title="Open Resume in New Tab">
-                        <img src="images/Resume-Logo.jpg" height="80">
-                    </a> 
-                </button>
+                <a href="images/Certified Resume 2024.pdf" target="_blank" title="Open Resume in New Tab">
+                    <i class="fa-solid fa-user-tie fa-2xl" id="Resume"></i>
+                </a> 
             </center>
         </span>
-        <br>
+        <br><br>
+        <br><br>
+        <!-- Create a button that takes you to this website's github repository -->
         <span>
             <center>
-                <button style="border: 5; border-radius: 10px;">
                     <a href="https://github.com/TarisMajor/Webpage-Project/" target="_blank" title="This takes you to my Github Repository">
-                            <img src="images/github-Icon.jpg" height="80">
+                        <i class="fa-brands fa-square-github fa-xl" id="github"></i>
                     </a>
-                </button> 
-            </center>
-                      
-        </span>   
-        <br>
+            </center>    
+        </span> 
+
+        <br><br>
+        <br><br>
+
+        <!-- Create a button that open's an email application for people to send me an email -->
         <span>
             <center>
-                <button style="border: 5; border-radius: 10px;">
-                    <a href="mailto:tarismajor@gmail.com" target="_self" title="Send me an email">
-                        <img src="images/Email_Logo_PNG.png" height="80">
-                    </a>
-                </button>
+               <a href="mailto:tarismajor@gmail.com" target="_self" title="Send me an email">
+                    <i class="fa-regular fa-envelope fa-2xl" id="email"></i>
+               </a>
             </center>            
         </span>
-            
     </main>
     
     <footer>
+        <br><br>
         <hr>
         Author: Taris Major<br>
         &copy; Copyright Reserved <br>
@@ -75,5 +100,6 @@
    
 </body>
 
+<!-- Links the Javascript file for the alert button -->
 <script src="projects.js"></script>
 </html>

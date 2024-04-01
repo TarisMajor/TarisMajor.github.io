@@ -15,6 +15,7 @@ h1{
 header{
     color: white;
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 
 footer{
@@ -38,13 +39,41 @@ p{
 
 }
 
-a:link{
+a{
     color: white;
+    text-decoration: none;
+    padding: 20px;
 }
 a:hover{
     color:darkgrey;
     font-size: 1.25em;
 }
-a:visited{
-    color: blue;
+
+#Resume{
+    scale: 2;
+}
+
+#github{
+    scale: 3.5;
+}
+
+#email{
+    scale: 2.25;
+}
+
+#profileimg{
+    animation-name: popOut;
+    animation-duration: 2.5s;
+}
+span:hover{
+    animation-name: zoom;
+    animation-duration: 1.2s;
+}
+
+@keyframes popOut{
+    from{transform: scale(.01)}
+}
+
+@keyframes zoom{
+    100%{transform: scale(1.1em);}
 }
