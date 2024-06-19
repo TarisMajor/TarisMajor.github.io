@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+
+<!-- Create a name for the tab-->
+<title>Taris Major Portfolio</title>
+
+<!-- Set the image of the webpage in the tab -->
+<link rel="icon" type="image/jpg" href="images/favicon.png">
+
+<!-- Link the CSS file for styling -->
+<link rel="stylesheet" href="styles.css"/>
+
+<!-- Create a description for the website -->
+<meta name="Description" content="My first web project creating resume">
+
+<!-- If anyone were to search up the website, these keywords would be used -->
+<meta name="keywords" content="Resume, Computer Science, Project">
+<meta name="Author" content="Taris Major">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Getting icons from this website -->
+<script src="https://kit.fontawesome.com/a6dfca3195.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Create the header with name and 4 links -->
+    <header>
+        <center>
+            <br>
+            <a href="main.html" class="ClickonMe" id="Home">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="About.html" class="ClickonMe" id="About">
+                <i class="fa-solid fa-address-card"></i>
+                About
+            </a>
+
+            <a href="Projects.html" class="ClickonMe" id="Projects">
+                <i class="fa-solid fa-folder-tree"></i>
+                Projects
+            </a>
+
+            <a href="" onclick="notYet()" class="ClickonMe" id="Contact">
+                <i class="fa-regular fa-address-book"></i>
+                Contact
+            </a>
+        </center>
+    </header>
+    
+    <main class="background-stars">
+        
+        <div class="shooting-star"></div>
+
+        <section id="Greeting"> 
+            
+            <h1> Welcome, I'm Taris.</h1>
+            <h2 id="h2-greet">Computer Science Graduate Student.</h2>
+
+            <a href="images/Certified Resume 2024.pdf" target="_blank" title="Open Resume in New Tab">
+                <button class="resume-button">View Resume</button>
+            </a> 
+
+        </section>
+        
+    </main>
+
+    <script src="shooting-star.js"></script>
+        
+    <footer>
+        <h4>
+        <center>
+        &copy; 2024 Made by Taris Major
+        </center>
+        </h4>
+        
+    </footer>
+   
+</body>
+
+<!-- Links the Javascript file for the alert button -->
+<script src="main.js"></script>
+</html>
