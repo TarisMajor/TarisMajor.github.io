@@ -7,7 +7,7 @@
 <title>Taris Major Portfolio</title>
 
 <!-- Set the image of the webpage in the tab -->
-<link rel="icon" type="image/jpg" href="images/Logo.png">
+<link rel="icon" type="image/jpg" href="images/favicon.png">
 
 <!-- Link the CSS file for styling -->
 <link rel="stylesheet" href="styles.css"/>
@@ -19,12 +19,12 @@
 <meta name="keywords" content="Resume, Computer Science, Project">
 <meta name="Author" content="Taris Major">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta h
+
 <!-- Getting icons from this website -->
 <script src="https://kit.fontawesome.com/a6dfca3195.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="Backdrop" >
+<body class="Backdrop-Blurred">
     <!-- Create the header with name and 4 links -->
     <header>
         <center>
@@ -42,32 +42,35 @@
                 <i class="fa-regular fa-address-book"></i>
                 Contact
             </a>
-        </center>
+        </center>        
     </header>
     
     <main class="background-stars">
         
         <div class="shooting-star"></div>
-        
+
         <a href="index.html" class="Logo" id="Home" title="HomePage">
             <img src="images/t-tree.png" id="logo" class="Logo">
         </a>
 
-        <section id="Greeting"> 
+        <div class="about-content">
             
-            <h1> Welcome, I'm Taris.</h1>
-            <h2 id="h2-greet">Computer Science Graduate Student.</h2>
+            <h2 id="Contact">
+                <a href="https://www.linkedin.com/in/tarismajor/" target="_blank" id="Contact">
+                    <i class="fa-brands fa-linkedin"></i> Taris Major
+                </a>
+            </h2>
 
-            <a href="images/Certified Resume 2024.pdf" target="_blank" title="Open Resume in New Tab">
-                <button class="resume-button">View Resume</button>
-            </a> 
+            <h2 id="Contact">
+                <a href="mailto:tarismajor@gmail.com" id="Contact">
+                    <i class="fa-regular fa-envelope"></i> Email
+                </a>
+            </h2>
+            
+        </div>
 
-        </section>
-        
     </main>
-
-    <script src="shooting-star.js"></script>
-        
+    
     <footer>
         <h4>
         <center>
@@ -81,4 +84,5 @@
 
 <!-- Links the Javascript file for the alert button -->
 <script src="main.js"></script>
+<script src="shooting-star.js"></script>
 </html>

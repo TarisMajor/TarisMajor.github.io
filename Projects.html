@@ -4,7 +4,7 @@
 <head>
 
 <!-- Create a name for the tab-->
-<title>Taris Major's Projects</title>
+<title>Taris Major Portfolio</title>
 
 <!-- Set the image of the webpage in the tab -->
 <link rel="icon" type="image/jpg" href="images/favicon.png">
@@ -24,49 +24,62 @@
 <script src="https://kit.fontawesome.com/a6dfca3195.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- Create the header with name and 3 links -->
+<body class="Backdrop-Blurred">
+    <!-- Create the header with name and 4 links -->
     <header>
         <center>
-            <a href="index.html" class="ClickonMe" id="Home">
-                <i class="fa-sharp fa-solid fa-house"></i>
-                Home
-            </a>
-
-            <a href="" onclick="notYet()" class="ClickonMe" id="About">
+            <a href="About.html" class="ClickonMe" id="About">
                 <i class="fa-solid fa-address-card"></i>
                 About
+            </a>
+
+            <a href="Projects.html" class="ClickonMe" id="Projects">
+                <i class="fa-solid fa-folder-tree"></i>
+                Projects
+            </a>
+
+            <a href="hobbies.html" class="ClickonMe" id="Hobbies">
+                <i class="fa-solid fa-gamepad"></i>
+                Hobbies
             </a>
 
             <a href="" onclick="notYet()" class="ClickonMe" id="Contact">
                 <i class="fa-regular fa-address-book"></i>
                 Contact
             </a>
-        </center>
-        <hr>
+        </center>        
     </header>
     
-    <main>
-        <div class="textBox">
-           <div class="box" id="box1">
-            Text
-           </div>
+    <main class="background-stars">
+        
+        <div class="shooting-star"></div>
+
+        <a href="index.html" class="Logo" id="Home" title="HomePage">
+            <img src="images/t-tree.png" id="logo" class="Logo">
+        </a>
+
+        <div class="about-content">
+
+
+
         </div>
 
     </main>
     
     
-    <script src="shooting-star.js"></script>
 
     <footer>
-        <br><br>
-        <hr>
-        Author: Taris Major<br>
-        &copy; Copyright Reserved <br>
+        <h4>
+        <center>
+        &copy; 2024 Made by Taris Major
+        </center>
+        </h4>
+        
     </footer>
    
 </body>
 
 <!-- Links the Javascript file for the alert button -->
 <script src="main.js"></script>
+<script src="shooting-star.js"></script>
 </html>

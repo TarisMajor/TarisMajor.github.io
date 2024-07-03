@@ -24,71 +24,138 @@
 <script src="https://kit.fontawesome.com/a6dfca3195.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="Backdrop-Blurred">
     <!-- Create the header with name and 4 links -->
     <header>
         <center>
-            <a href="index.html" class="ClickonMe" id="Home">
-                <i class="fa-sharp fa-solid fa-house"></i>
-                Home
+            <a href="About.html" class="ClickonMe" id="About">
+                <i class="fa-solid fa-address-card"></i>
+                About
             </a>
 
-            <a href="Projects.html" class="ClickonMe" id="Projects">
-                <i class="fa-solid fa-folder-tree"></i>
-                Projects
+            <a href="hobbies.html" class="ClickonMe" id="Hobbies">
+                <i class="fa-solid fa-gamepad"></i>
+                Hobbies
             </a>
 
-            <a href="" onclick="notYet()" class="ClickonMe" id="Contact">
+            <a href="Contact.html" class="ClickonMe" id="Contact">
                 <i class="fa-regular fa-address-book"></i>
                 Contact
             </a>
         </center>        
     </header>
     
-    <main>
-        <!-- Created a link to my LinkedIn profile using a photo of me -->
-        <span>
-            <a id="smile" href="https://www.linkedin.com/in/tarismajor/" class="ClickonMe" target="_blank" >
-                 <img src="images/professional.jpg" height="300" alt="This is a picture of Taris" title="Taris' LinkedIn Profile" id="profileimg">
-            </a>
-        </span>
-
-        <br><br>
+    <main class="background-stars">
         
-        <!-- Create a button that leads to my most updated resume -->
-        <span>
-            <center>
-                <a href="images/Certified Resume 2024.pdf" class="ClickonMe" target="_blank" title="Open Resume in New Tab">
-                    <i class="fa-regular fa-file-pdf fa-xl" id="Resume"></i>
-                </a> 
-            </center>
-        </span>
-        <br><br>
-        <br><br>
-        <!-- Create a button that takes you to this website's github repository -->
-        <span>
-            <center>
-                    <a href="https://github.com/TarisMajor/Webpage-Project/" class="ClickonMe"  target="_blank" title="This takes you to my Github Repository">
-                        <i class="fa-brands fa-square-github fa-xl" id="github"></i>
-                    </a>
-            </center>    
-        </span> 
+        <div class="shooting-star"></div>
 
-        <br><br>
-        <br><br>
+        <a href="index.html" class="Logo" id="Home" title="HomePage">
+            <img src="images/t-tree.png" id="logo" class="Logo">
+        </a>
 
-        <!-- Create a button that open's an email application for people to send me an email -->
-        <span>
-            <center>
-               <a href="mailto:tarismajor@gmail.com" class="ClickonMe" target="_self" title="Send me an email">
-                    <i class="fa-regular fa-envelope fa-2xl" id="email"></i>
-               </a>
-            </center>            
-        </span>
+        <div class="about-content">
+
+            <a id="profileimg" >
+                <img src="images/professional.jpg" height="300" alt="This is a picture of Taris" title="Taris Major" class="profileimg">
+            </a>
+
+            <p>
+                Born and raised in 
+                <b class="bah">
+                    The Bahamas
+                </b> 
+                , I've always had a thirst for 
+                <b class="bah">
+                    knowledge
+                </b> 
+                and a passion for
+                <b class="bah">
+                    design
+                </b>
+                . Following this passion, led me to obtaining my 
+                <b class="bah">
+                    Associates in Architecture
+                </b>
+                degree. After that, my journey led me to obtaining my 
+                <b class="bah">
+                    Bachelor's degree in Mechanical Engineering
+                </b>
+                 in the summer of 2020. I then spent
+                 <b class="bah">
+                    3 years
+                </b> working in the field,
+                 until I departed to my current venture. I'm currently pursuing my
+                 <b class="bah">
+                    Master's Degree
+                </b>
+                in 
+                <b class="bah">
+                    Computer Science
+                </b>
+                . I aspire to be a pioneer in this space, utilizing all of the knowledge 
+                and skills I've obtained so far.
+            </p>
+
+            <p>
+                 Using this degree, I gained a lot of 
+                 <b class="bah">
+                    experience
+                </b>
+                in design as a 
+                <b class="bah">
+                    Design Support Engineer
+                </b>
+                . While in this field, I've gained valuable skills in 
+                <b class="bah">
+                    Teamwork
+                </b>
+                , working directly with clients and vendors to get projects done in a 
+                <b class="bah">
+                    timely
+                </b>
+                 and 
+                 <b class="bah">
+                    efficient 
+                </b>
+                manner. I'm 
+                <b class="bah">
+                    excited
+                </b>
+                 to start on this new journey in my life. 
+            </p>
+
+            <p>
+                My goal is to be an extremely
+                <b class="bah">
+                    well-rounded Engineer 
+                </b>
+                that all of my coworkers can count on. I'm currently working on being proficient in 
+                <b class="bah">
+                    C++
+                </b>,
+                <b class="bah">
+                    CSS
+                </b>,
+                <b class="bah">
+                    HTML
+                </b>,
+                <b class="bah">
+                    Python 
+                </b>, and 
+                <b class="bah">
+                    JavaScript
+                </b>
+                 to start. I'm thirsty to learn more and I plan to keep growing until 
+                 <b class="bah">
+                    I'm the best
+                </b>.
+            </p>
+
+        </div>
+
     </main>
     
     
-    <script src="shooting-star.js"></script>
 
     <footer>
         <h4>
@@ -103,4 +170,5 @@
 
 <!-- Links the Javascript file for the alert button -->
 <script src="main.js"></script>
+<script src="shooting-star.js"></script>
 </html>

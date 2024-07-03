@@ -14,12 +14,15 @@ h1{
 header{
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    text-wrap: balance;
+    margin-top: 1rem;
 }
 
-#smile{
-    padding: 100px;
-    top: 500px;
-    background: transparent;
+.profileimg{
+    border-radius: 100%;
+    border-color: #f35a14;
+    animation-name: popOut;
+    animation-duration: 2.5s;
 }
 
 footer{
@@ -28,8 +31,7 @@ footer{
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 1.5rem; 
+    align-items: center;
 }
 .background-stars
 {
@@ -60,7 +62,6 @@ footer{
 }
 
 section#Greeting {
-    z-index: 1;
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -83,21 +84,106 @@ section#Greeting {
     opacity: 0;
     animation: slideInandFade 1s ease-in 2s forwards ;
 }
-body{
+.Backdrop{
     font-family: Montserrat-Light, Lora-Regular, Merriweather-Light, Verdana, Geneva, Tahoma, sans-serif;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
     background-size: cover;
     background-image:url("images/ai-star-ocean.jpg")
 }
+
+.Backdrop-Blurred{
+    font-family: Montserrat-Light, Lora-Regular, Merriweather-Light, Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover;
+    background-image:url("images/ocean-blurred.png")
+}
+
+#logo {
+    width: 4em;
+    float: left;
+    position: absolute;
+    margin-left: 1.5rem;
+    transform: rotateY(360deg);
+    transition: transform 0.7s ease-in-out;
+}
 p{
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
 }
 
 a{
     text-decoration: none;
     padding: 20px;
+    position: relative;
+    color: antiquewhite;
+}
+
+#Contact a:hover{
+    color: #f35a14;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+/* Gets rid of the the scroll bar */
+.about-content::-webkit-scrollbar {
+    width: 0px; /* For horizontal scrollbars */
+    height: 0px; /* For vertical scrollbars */
+}
+
+.about-content {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.about-content p{
+    position: inherit;
+    margin-bottom: 2rem;
+    font-size: clamp(1rem, 1.4vw, 1.4rem);
+}
+
+/*About CSS*/
+.about-content{
+    box-sizing: border-box;
+    max-width: 1440px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 6rem 2rem 10rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(212, 210, 210);
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+
+.bah {
+    background: -webkit-linear-gradient(left, black, gold);
+    background: -o-linear-gradient(right, gold, aquamarine);
+    background: -moz-linear-gradient(right,  gold, aquamarine);
+   background: linear-gradient(to right,  gold, aquamarine);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bah-b {
+    background: -webkit-linear-gradient(left, black, gold);
+    background: -o-linear-gradient(right, gold, aquamarine);
+    background: -moz-linear-gradient(right,  gold, aquamarine);
+   background: linear-gradient(to right,  gold, aquamarine);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font:200px;
 }
 
 #Greeting a{
@@ -110,14 +196,18 @@ a{
     color:floralwhite;
 }
 
+#logo:hover{
+    transform: rotateY(180deg);
+}
+
 .ClickonMe:hover{
     color:darkgrey;
     font-size: 1.25em;
 }
 
 .resume-button{
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: orangered;
     border: 2.3px solid white;
     border-radius: 8px;
     padding: .625rem 1.25rem;
@@ -131,13 +221,14 @@ a{
     opacity: 0;
     font-weight: 500;
     animation: slideInandFade 2s ease-in 3s forwards ;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease-in-out;
     
 }
 
 .resume-button:hover{
-    background-color: white;
-    color:#f35a14;
+    background-color: #f35a14;
+    color:white;
+    border: 2.3px solid #f35a14;
     font-weight: 1000;
 }
 
@@ -153,10 +244,6 @@ a{
     scale: 2.25;
 }
 
-#profileimg{
-    animation-name: popOut;
-    animation-duration: 2.5s;
-}
 span:hover{
     transition: color ease-in-out 0.3s;
     animation-duration: 1.2s;
@@ -240,4 +327,15 @@ span:hover{
     100% {
         transform: translate(calc(-100vw - 100px), calc(100vh + 100px)); /* End position */
     }
+}
+
+@keyframes rotateHoriz {
+    from{
+        transform: rotateY(0 deg) ;
+    }
+
+    to{
+        transform: rotate(180 deg);
+    }
+    
 }
